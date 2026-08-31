@@ -1,0 +1,5 @@
+intent_path: intent
+code_path: src
+tests_path: tests
+repos:
+  korean_app: /home/leo/Projects/korean_app
