@@ -6,7 +6,7 @@ artifact_repo: korean_app
 
 Application is the local-first mobile experience for a native French speaker who is a complete Korean beginner. It prioritizes useful spoken Korean, listening, active recall, understandable pronunciation, and real conversation. V1 does not teach Korean reading or writing and never requires an account or network connection for core learning.
 
-Its artifact is a Rust application crate under crates/app. The crate owns the runtime, interface, learning state, revision behavior, settings, audio coordination, and local persistence. It consumes the public PronunciationEngine.pipeline boundary and the course supplied by LanguageContent.
+Its artifact is a Rust application crate under crates/app. The crate owns the runtime, interface, learning state, revision behavior, settings, audio coordination, and local persistence. It consumes the public PronunciationEngine.pipeline boundary and versioned course bundles supplied by LanguageContent.
 
 Application is a wrapper around LanguageContent. It accepts the islands, lessons, sentences, ordering, and objectives that LanguageContent provides without defining their structure, cardinality, schema, or pedagogical composition. Sharing an artifact crate does not merge the two intent entities.
 
