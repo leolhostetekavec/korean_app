@@ -1,3 +1,7 @@
+---
+tests_path: crates/pronunciation-engine/tests
+---
+
 # Korean Phonological Rules
 
 This component transforms parsed Korean orthography into a Korean surface pronunciation. It must remain independent of French-oriented mapping and rendering.
@@ -5,7 +9,7 @@ This component transforms parsed Korean orthography into a Korean surface pronun
 ## KoreanSurfaceContract
 
 - binding: semantic
-- artifact_path: src/rules.rs
+- artifact_path: crates/pronunciation-engine/src/rules.rs
 
 The rule engine must:
 
@@ -26,4 +30,3 @@ The rule engine must:
 15. Expose intermediate results after each rule stage so rule ordering and regressions can be tested.
 
 The conceptual Korean surface inventory includes plain, fortis, and aspirated variants for applicable stops and affricates, plus N, R, M, NG, S, H, and the coda categories K, T, P, N, M, NG, and R.
-

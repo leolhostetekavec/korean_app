@@ -1,3 +1,7 @@
+---
+tests_path: crates/pronunciation-engine/tests
+---
+
 # French Phonetic Mapper
 
 The mapper consumes only Korean surface pronunciation. It converts Korean sound categories into French-oriented phonetic targets without changing the Korean analysis.
@@ -5,7 +9,7 @@ The mapper consumes only Korean surface pronunciation. It converts Korean sound 
 ## FrenchTargetContract
 
 - binding: semantic
-- artifact_path: src/french.rs
+- artifact_path: crates/pronunciation-engine/src/french.rs
 
 The mapper must:
 
@@ -18,4 +22,3 @@ The mapper must:
 7. Provide practical targets for core consonants including m, n, ng, p, t, k, h, flap-like ㄹ, and lateral ㄹ.
 8. Keep the mapping convention explicit and replaceable so improved French approximations do not require changes to Korean parsing or phonology.
 9. Produce an ordered French-oriented sound sequence suitable for the renderer and independently testable before spelling output is generated.
-

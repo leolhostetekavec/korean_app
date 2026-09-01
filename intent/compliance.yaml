@@ -1,0 +1,37 @@
+audited_at: 2026-08-31T18:54:13+02:00
+contracts:
+  PronunciationEngine.parser.OrthographicRepresentationContract:
+    binding: semantic
+    verdict: honored
+    evidence: code-trace
+    citation: "crates/pronunciation-engine/src/korean.rs:3-231; crates/pronunciation-engine/tests/parser.rs:3-73"
+  PronunciationEngine.rules.KoreanSurfaceContract:
+    binding: semantic
+    verdict: honored
+    evidence: code-trace
+    citation: "crates/pronunciation-engine/src/rules.rs:3-422; crates/pronunciation-engine/tests/rules.rs:3-91"
+  PronunciationEngine.mapper.FrenchTargetContract:
+    binding: semantic
+    verdict: honored
+    evidence: code-trace
+    citation: "crates/pronunciation-engine/src/french.rs:4-185; crates/pronunciation-engine/tests/french.rs:3-37"
+  PronunciationEngine.renderer.FrenchReadableOutputContract:
+    binding: semantic
+    verdict: honored
+    evidence: code-trace
+    citation: "crates/pronunciation-engine/src/french.rs:32-253; crates/pronunciation-engine/tests/french.rs:3-43"
+  PronunciationEngine.pipeline.LibraryBoundaryContract:
+    binding: semantic
+    verdict: honored
+    evidence: code-trace
+    citation: "crates/pronunciation-engine/Cargo.toml:1-10; crates/pronunciation-engine/src/lib.rs:1-71"
+  PronunciationEngine.pipeline.EndToEndContract:
+    binding: semantic
+    verdict: honored
+    evidence: code-trace
+    citation: "crates/pronunciation-engine/src/lib.rs:26-92; crates/pronunciation-engine/tests/pipeline.rs:3-38"
+totals:
+  contracts: 6
+  honored: 6
+  violated: 0
+  undetermined: 0

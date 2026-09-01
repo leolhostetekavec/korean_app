@@ -1,3 +1,7 @@
+---
+tests_path: crates/pronunciation-engine/tests
+---
+
 # Parser
 
 The parser converts Unicode Hangul syllable blocks into an orthographic Korean representation. It records Korean identity and structure only; it does not apply pronunciation rules or French mappings.
@@ -5,7 +9,7 @@ The parser converts Unicode Hangul syllable blocks into an orthographic Korean r
 ## OrthographicRepresentationContract
 
 - binding: semantic
-- artifact_path: src/korean.rs
+- artifact_path: crates/pronunciation-engine/src/korean.rs
 
 The parser must:
 
@@ -33,4 +37,3 @@ OrthographicWord {
     syllables: Vec<Syllable>,
 }
 ```
-

@@ -1,3 +1,7 @@
+---
+tests_path: crates/pronunciation-engine/tests
+---
+
 # French-Readable Renderer
 
 The renderer converts French-oriented phonetic targets into text that a native French reader can pronounce approximately. It is a presentation convention, not a Korean phonology component.
@@ -5,7 +9,7 @@ The renderer converts French-oriented phonetic targets into text that a native F
 ## FrenchReadableOutputContract
 
 - binding: semantic
-- artifact_path: src/french.rs
+- artifact_path: crates/pronunciation-engine/src/french.rs
 
 The renderer must:
 
@@ -17,4 +21,3 @@ The renderer must:
 6. Return deterministic output for a given French-target sequence under the active rendering convention.
 7. Keep the rendering convention replaceable independently from the Korean engine, allowing future English, Spanish, Slovenian, or other target-language renderers.
 8. Support end-to-end inspection of the progression from Hangul through parsed structure, Korean surface pronunciation, French target, and final readable output.
-
